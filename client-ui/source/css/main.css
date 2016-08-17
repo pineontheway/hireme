@@ -1,121 +1,83 @@
-body{
-  background-color: #1cbb9b;
+body, html {
+	font-family: 'Lato', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
 }
-.login-box{
-  position:relative;
-  margin: 10px auto;
-  width: 500px;
-  height: 380px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
--moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+
+/*Home Section*/
+
+header{
+  background: url(../images/unsplash2.jpeg) no-repeat bottom right;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+	height: 100%;
+  text-align: center;
 }
-.lb-header{
-  position:relative;
-  color: #00415d;
-  margin: 5px 5px 10px 5px;
-  padding-bottom:10px;
-  border-bottom: 1px solid #eee;
-  text-align:center;
-  height:28px;
+
+header p{
+  color: rgba(255,255,255,0.8);
+	font-size: 20px;
+	margin-bottom: 80px;
 }
-.lb-header a{
-  margin: 0 25px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #666;
-  font-weight: bold;
-  font-size: 15px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-.lb-header .active{
-  color: #029f5b;
-  font-size: 18px;
-}
-.social-login{
-  position:relative;
-  float: left;
-  width: 100%;
-  height:auto;
-  padding: 10px 0 15px 0;
-  border-bottom: 1px solid #eee;
-}
-.social-login a{
-  position:relative;
-  float: left;
-  width:calc(40% - 8px);
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid rgba(0,0,0,0.05);
-  padding: 12px;
-  border-radius: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 3%;
-  text-align:center;
-}
-.social-login a i{
+
+header .heading{
   position: relative;
-  float: left;
-  width: 20px;
-  top: 2px;
+	padding-top: 250px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 220px;
 }
-.social-login a:first-child{
-  background-color: #49639F;
+.heading H2 {
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #fff;
 }
-.social-login a:last-child{
-  background-color: #DF4A32;
+
+/*navigation*/
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
 }
-.email-login,.email-signup{
-  position:relative;
-  float: left;
-  width: 100%;
-  height:auto;
-  margin-top: 20px;
-  text-align:center;
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
 }
-.u-form-group{
-  width:100%;
-  margin-bottom: 10px;
+#menu a.navbar-brand {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 900;
 }
-.u-form-group input[type="email"],
-.u-form-group input[type="password"]{
-  width: calc(50% - 22px);
-  height:45px;
-  outline: none;
-  border: 1px solid #ddd;
-  padding: 0 10px;
-  border-radius: 2px;
-  color: #333;
-  font-size:0.8rem;
-  -webkit-transition:all 0.1s linear;
-  -moz-transition:all 0.1s linear;
-  transition:all 0.1s linear;
+#menu a.navbar-brand i.fa {
+	color: rgba(255,255,255,0.7);
+	margin-right: 3px;
 }
-.u-form-group input:focus{
-  border-color: #358efb;
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #eeeeee;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
-.u-form-group button{
-  width:50%;
-  background-color: #1CB94E;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 14px 0;
-  border-radius: 2px;
-  text-transform: uppercase;
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #0dad8d;
 }
-.forgot-password{
-  width:50%;
-  text-align: left;
-  text-decoration: underline;
-  color: #888;
-  font-size: 0.75rem;
+.on {
+	background-color: #222222 !important;
+	padding: 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #0dad8d !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #0dad8d;
+	border-color: #0dad8d;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
 }

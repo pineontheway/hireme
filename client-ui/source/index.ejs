@@ -7,58 +7,50 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <title>HireMe</title>
     <script src="bower_components/angular/angular.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
     <script src='app-config.js'></script>
   </head>
   <body ng-app='client-ui'>
 
-      <div class="container">
+    <div class="container">
         <div ui-view></div>
     </div>
-      <div class="login-box">
-      <div class="lb-header">
-        <a href="#" class="active" ui-sref="home">Login</a>
-        <a href="#" id="signup-box-link">Sign Up {{2+3}}</a>
-      </div>
-      <div class="social-login">
-        <a href="#">
-          <i class="fa fa-facebook fa-lg"></i>
-          Login in with facebook
-        </a>
-        <a href="#">
-          <i class="fa fa-google-plus fa-lg"></i>
-          log in with Google
-        </a>
-      </div>
-      <form class="email-login">
-        <div class="u-form-group">
-          <input type="email" placeholder="Email"/>
+    <nav id = 'menu' class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
         </div>
-        <div class="u-form-group">
-          <input type="password" placeholder="Password"/>
-        </div>
-        <div class="u-form-group">
-          <button>Log in</button>
-        </div>
-        <div class="u-form-group">
-          <a href="#" class="forgot-password">Forgot password?</a>
-        </div>
-      </form>
-      <form class="email-signup">
-        <div class="u-form-group">
-          <input type="email" placeholder="Email"/>
-        </div>
-        <div class="u-form-group">
-          <input type="password" placeholder="Password"/>
-        </div>
-        <div class="u-form-group">
-          <input type="password" placeholder="Confirm Password"/>
-        </div>
-        <div class="u-form-group">
-          <button>Sign Up</button>
-        </div>
-      </form>
-    </div>
 
-</body>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <header>
+      <div class="heading">
+        <h2><strong>HIREME</strong></h2>
+        <p>
+          Worlds first Currated Job Website for Recruiters
+        </p>
+      </div>
+    </header>
+
+
+  </body>
 </html>
